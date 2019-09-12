@@ -47,7 +47,7 @@ spec:
         - --random-error=false
         env:
         - name: Welcome to Flux
-          value: "Greetings human!"
+          value: "TESTING"
         livenessProbe:
           httpGet:
             path: /healthz
