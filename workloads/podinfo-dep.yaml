@@ -46,7 +46,7 @@ spec:
         - --random-delay=false
         - --random-error=false
         env:
-        - name: Welcome to Flux
+        - name: PODINFO_UI_MESSAGE
           value: "TESTING"
         livenessProbe:
           httpGet:
