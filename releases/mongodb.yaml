@@ -1,6 +1,6 @@
 ---
-apiVersion: flux.weave.works/v1beta1
-kind: HelmRelease
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: mongodb
   namespace: flux
