@@ -15,7 +15,7 @@ spec:
     rollingUpdate:
       maxUnavailable: 0
     type: RollingUpdate
-  replicas: 4
+  replicas: 6
   selector:
     matchLabels:
       app: podinfo
@@ -48,7 +48,7 @@ spec:
         - --random-error=false
         env:
         - name: PODINFO_UI_MESSAGE
-          value: "TRIAL"
+          value: "FUJITSU"
         livenessProbe:
           httpGet:
             path: /healthz
