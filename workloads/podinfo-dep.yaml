@@ -15,6 +15,7 @@ spec:
     rollingUpdate:
       maxUnavailable: 0
     type: RollingUpdate
+  replicas: 4
   selector:
     matchLabels:
       app: podinfo
@@ -47,7 +48,7 @@ spec:
         - --random-error=false
         env:
         - name: PODINFO_UI_MESSAGE
-          value: "TESTINGMEETUP"
+          value: "TRIAL"
         livenessProbe:
           httpGet:
             path: /healthz
